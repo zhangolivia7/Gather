@@ -243,7 +243,7 @@ struct Home: View {
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 12)
-        .background(.gatherCardBackground)
+        .background(Color.white)
         .cornerRadius(20, corners: [.topLeft, .topRight])
     }
 }

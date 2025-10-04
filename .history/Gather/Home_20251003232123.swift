@@ -181,9 +181,9 @@ struct Home: View {
             Button(action: {}) {
                 Image(systemName: "xmark")
                     .font(.system(size: 24, weight: .bold))
-                    .foregroundColor(.gatherWhiteText)
+                    .foregroundColor(.white)
                     .frame(width: 60, height: 60)
-                    .background(.gatherPass)
+                    .background(Color(red: 0.6, green: 0.6, blue: 0.6))
                     .clipShape(Circle())
             }
             
@@ -191,9 +191,9 @@ struct Home: View {
             Button(action: {}) {
                 Image(systemName: "heart")
                     .font(.system(size: 24, weight: .bold))
-                    .foregroundColor(.gatherWhiteText)
+                    .foregroundColor(.white)
                     .frame(width: 60, height: 60)
-                    .background(.gatherMatch)
+                    .background(Color.blue)
                     .clipShape(Circle())
             }
         }
@@ -207,10 +207,10 @@ struct Home: View {
                 VStack(spacing: 4) {
                     Image(systemName: "house.fill")
                         .font(.system(size: 20))
-                        .foregroundColor(selectedTab == 0 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 0 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                     Text("Home")
                         .font(.system(size: 10))
-                        .foregroundColor(selectedTab == 0 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 0 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -220,10 +220,10 @@ struct Home: View {
                 VStack(spacing: 4) {
                     Image(systemName: "bubble.left.and.bubble.right")
                         .font(.system(size: 20))
-                        .foregroundColor(selectedTab == 1 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 1 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                     Text("Messages")
                         .font(.system(size: 10))
-                        .foregroundColor(selectedTab == 1 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 1 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -233,17 +233,17 @@ struct Home: View {
                 VStack(spacing: 4) {
                     Image(systemName: "person")
                         .font(.system(size: 20))
-                        .foregroundColor(selectedTab == 2 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 2 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                     Text("Profile")
                         .font(.system(size: 10))
-                        .foregroundColor(selectedTab == 2 ? .gatherMatch : .gatherSecondaryText)
+                        .foregroundColor(selectedTab == 2 ? .blue : Color(red: 0.4, green: 0.4, blue: 0.4))
                 }
                 .frame(maxWidth: .infinity)
             }
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 12)
-        .background(.gatherCardBackground)
+        .background(Color.white)
         .cornerRadius(20, corners: [.topLeft, .topRight])
     }
 }
